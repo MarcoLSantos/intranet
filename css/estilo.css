@@ -1,0 +1,612 @@
+/*Limpar formataçoes padrão*/
+/*toggle button 1*/
+/* #toggle-1 {
+}
+#mostra {
+   display:none;
+}
+#toggle-1:checked ~ #mostra {
+   display:block;
+} */
+
+/*toggle button 2*/
+/* #toggle-2 {
+}
+#mostra-2{
+   display:none;
+}
+#toggle-2:checked ~ #mostra-2 {
+   display:block;
+} */
+
+/*toggle button 3*/
+/* #toggle-3 {   
+}
+#mostra-3{
+   display:none;
+}
+#toggle-3:checked ~ #mostra-3 {
+   display:block;
+} */
+
+/* CSS DA PÁGINA */
+html{
+	height: 100%;
+}
+
+tudo{
+	min-height: 100%;
+}
+
+* html #tudo {
+	height: 100%; /* hack para IE6 que trata height como min-height */
+	}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #E2F1F8;
+	background-image: url(../images/wallpaper.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: 100%;
+	height: 100%;
+}
+
+h2 {
+	color: #b9c941;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #09668B;
+}
+
+a:visited {
+	color: #09668B;
+}
+
+a:hover {
+	color: #7A8B8B;
+}
+
+a:active {
+	color: #53868B;
+}
+
+#navegacao {
+	background: #BFEFFF;
+	border-bottom:  1px solid #d8d8d8;
+	height: 70px; 
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.color-info {
+	background-color: rgba(191, 239, 255, 0.527);
+}
+
+#logo h1 {
+	float: left;
+	padding-top: 12px;
+	padding-left: 80px;
+}
+
+#logo img{
+	float: left;
+	height: 60px;
+}
+
+#menu {
+	/* padding: 20px 0px; */
+	float: right;
+	font-size: 18px;
+}
+
+#menu a {
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+#menu a:link {
+	color: #09668B;
+}
+
+#menu a:visited {
+	color: none;
+}
+
+#menu a:hover {
+	color: #09668B;
+	background: #75D7D1;
+}
+
+#menu a:active {
+	color: #068980;
+}
+
+#menu-login {
+	margin-top: 7px;
+	padding: 2px 5px;
+	float: right;
+	background-color: #94E1FF;
+	border: 1px solid #09668B;
+	color: #09668B;
+}
+
+#menu-login a {
+	padding: 0px 0px;
+	text-decoration: none;
+}
+
+#menu-login a:link {
+	color: none;
+}
+
+#menu-login a:visited {
+	color: none;
+}
+
+#menu-login a:hover {
+	color: #068980;
+	background: none;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#menu-login a:active {
+	color: none;
+}
+
+#menu-login img {
+	height: 20px;
+	padding-top: 3px;
+	padding-left: 10px;
+	padding-right: 2px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#area {
+	padding-top: 5px;
+	width: 1032px;
+	margin: 0 auto;
+}
+#area-principal {
+	width: 800px;
+	margin: 95px auto 10px auto;
+	border: 1px solid #d8d8d8;
+	background-color: #F0F8FF;
+}
+#titulo {
+	font-size: 30px;
+	font-family: "Arial";
+	text-align: center;
+	margin: 1px;
+	margin-top: 5px;
+	color: #09668B;
+	padding: 5px;
+}
+
+.cor-padrao {
+	color: #09668B;
+}
+
+#conteudo{
+	width:100%;
+	height:83%px;
+	text-align: left;
+}
+
+/* Home */
+
+div.organograma {
+	width: 380px;
+	height: 250px;
+    margin: 7px;
+    margin-top: 12px;
+    margin-bottom: 0;
+    border: 3px solid; 
+	border-color:#AFEEEE;
+	float: left;
+}
+
+div.organograma img {
+	width: 358px;
+	height: 194px;
+	padding:5px 5px 5px 5px;
+	border:1px solid;
+	border-color:#ccc;
+	margin: 4px;
+}
+
+div.tabela {
+	padding: 1px;
+}
+
+div.atalho {
+	width:140px;
+	height:120px;
+    margin: 7px;
+    margin-top: 12px;
+    margin-bottom: 0;
+    border: 3px solid; 
+	border-color:#AFEEEE;
+	float: left;
+}
+
+div.atalho img{
+	width:120px;
+	height:60px;
+	padding:5px 5px 5px 5px;
+	border:1px solid;
+	border-color:#ccc;
+	margin: 4px;
+}
+
+div.atalho:hover{
+	border: 3px solid #C1CDCD;
+}
+
+div.desc{
+	padding:5px;
+	text-align: center;
+    
+}
+/* Convenios */
+div.convenios {
+	padding-left: 30px;
+	padding-top: 20px;
+	-webkit-column-width: 350px; /* Chrome, Safari, Opera */
+    -moz-column-width: 350px; /* Firefox */
+    column-width: 350px;
+}
+
+div.convenios a{
+	text-decoration:none;
+	color: #4F4F4F;
+	font-size: 18px;
+}
+
+div.convenios a:hover {
+	text-decoration: underline;
+	color: #008B8B;
+}
+
+/* Documentos */
+div.docs {
+	padding-left: 20px;
+	padding-top: 15px;
+	-webkit-column-width: 300px; /* Chrome, Safari, Opera */
+    -moz-column-width: 300px; /* Firefox */
+    column-width: 300px;
+}
+
+div.docs a{
+	text-decoration:none;
+	color: #4F4F4F;
+	font-size: 16px;
+}
+
+div.docs a:hover {
+	text-decoration: underline;
+	color: #09668B;
+}
+
+/* POTS  e Arquivos*/
+div.comissoes {
+	margin: 5px;
+	margin-left: 10px;
+	color: #00415A;
+}
+
+div.comissoes p{
+	text-align: center;
+	margin: 10px 2px;
+}
+
+div.pots {
+	margin: 5px;
+	margin-left: 10px;
+	color: #00415A;
+	text-decoration: underline;
+}
+
+div.pots p {
+	text-align: center;
+	margin: 10px 2px;
+}
+
+
+/* Ramais */
+div.ramais {
+	margin: 5px;
+}
+
+div.ramais a {
+	float: right;
+	padding-left: 15px;
+}
+
+div.ramais-tb{
+	height: 100%;
+	width: 100%;
+}
+
+div.ramais-tb td{
+	text-align: left;
+}
+
+div.sugramal {
+	margin: 10px;
+	color: #00415A;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+}
+
+tr:nth-child(even){background-color: #DEF0FF}
+
+/* alteração de cor do placeholder */
+    *::-webkit-input-placeholder {
+        color: white;
+    }
+    *:-moz-placeholder {
+    /* FF 4-18 */
+        color: white;
+    }
+    *::-moz-placeholder {
+    /* FF 19+ */
+        color: white;
+    }
+    *:-ms-input-placeholder {
+    /* IE 10+ */
+        color: white;
+   }
+
+/*Login*/
+div.login {
+	color: #00415A;
+
+}
+
+div.login tr:nth-child(even){background-color: #F0F8FF}
+
+div.login p {
+	text-align: center;
+	margin: 4px 2px;
+}
+
+div.login-table {
+	margin: 20px 200px;
+	padding: 10px 30px;
+	padding-top: 20px;
+	padding-left: 40px;
+	border: 1px solid #d8d8d8;
+	text-align: center;
+}
+
+::-webkit-input-placeholder {
+   color: #C1CDCD;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #C1CDCD;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #C1CDCD;  
+}
+
+:-ms-input-placeholder {  
+   color: #C1CDCD;  
+}
+
+#submit {
+	font-size: 16px;
+	color: #09668b;
+	padding: 2px 5px;
+	background: -moz-linear-gradient(
+		top,
+		#bfefff 0%,
+		#bfefff);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#bfefff),
+		to(#bfefff));
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #09668b;
+	-moz-box-shadow:
+		0px 1px 3px rgba(9,103,150,0),
+		inset 0px -1px 0px rgba(255,255,255,0);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(9,103,150,0),
+		inset 0px -1px 0px rgba(255,255,255,0);
+	box-shadow:
+		0px 1px 3px rgba(9,103,150,0),
+		inset 0px -1px 0px rgba(255,255,255,0);
+}
+/*Acesso Negado*/
+.acesso-negado {
+	text-align: center;
+	padding: 15px;
+
+}
+
+/*Config*/
+
+div.config {
+	margin: 7px;
+	color: #00415A;
+	margin-left: 10px;
+}
+
+div.config h3 {
+	margin-left: 15px;
+	padding-bottom: 4px;
+	text-decoration: underline;
+}
+
+div.config a {
+	text-decoration: underline;	
+}
+
+/*Ensino e Pesquisa*/
+
+div.ep {
+	padding: 5px;
+	color: #03435D;
+}
+
+div.ep h3{
+	padding-left: 10px;
+	color: #09668B;
+	text-decoration: underline;
+}
+
+div.ep a{
+	text-decoration: underline;
+}
+
+div.ep td {
+	padding: 1px 4px;	
+}
+
+.ep-cabecalho td{
+	text-align: center;
+	font-weight: bold;
+}
+
+#rodape{
+	position: fixed!important;
+    bottom: 0!important;
+    left: 0!important;
+    right: 0!important;
+    background: #BFEFFF!important;	
+	border-top:  1px solid #d8d8d8!important;
+    display: inline-block;
+    height: auto;
+	height: 40px;
+    z-index: 10000!important;
+}
+
+/* A Modal de alertas (background) */
+.main-modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Conteudo da Modal */
+.alert-modal-content {
+	background-color: #15233D;
+	color: #fff;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 1000;
+}
+.alert-modal-content img {
+	max-width: 100%;
+}
+
+/* O botão Close */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+.aviso-titulo {
+	margin: auto;
+}
+
+.atalhos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.atalho {
+  text-align: center;
+  width: 120px;
+  padding: 10px;
+  text-decoration: none;
+  color: #222;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.atalho img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 8px;
+}
+
+.atalho span {
+  display: block;
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+.atalho:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  background-color: #e0f1ff;
+}
