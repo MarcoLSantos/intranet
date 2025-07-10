@@ -9,6 +9,13 @@ include('pops.php');
 //
 //////Funções Gerais
 //
+function usuarioTemPermissao($nivelNecessario) {
+    if (!isset($_SESSION['UsuarioAcesso'])) {
+        return false;
+    }
+    return $_SESSION['UsuarioAcesso'] >= $nivelNecessario;
+}
+
 //Confere se o usuário está logado e redireciona caso não esteja
 function funcaoVerificaAcesso (){
 	// A sessão precisa ser iniciada em cada página diferente
@@ -228,34 +235,40 @@ function abrirTelaEventoAdverso($mysqli){
 }
 //EVENTO ADVERSO - fim
 
-function menuAcesso($n_acesso){
-	// Connecting, selecting database
-	$mysqli = new mysqli('127.0.0.1', 'dev', 'devloop356', 'intra_gamp');
-	// Check erros
-	if ( $mysqli->connect_errno ) {
-	  echo $mysqli->connect_errno, ' ', $mysqli->connect_error;
-	}
-	// Change character set to utf8
-	mysqli_set_charset($mysqli,"utf8");
+function menuAcesso($n_acesso) {
+    $mysqli = new mysqli('127.0.0.1', 'dev', 'devloop356', 'intra_gamp');
+    if ($mysqli->connect_errno) {
+        echo "<div class='alert alert-danger'>Erro de conexão: {$mysqli->connect_errno} - {$mysqli->connect_error}</div>";
+        return;
+    }
 
-	$menuSql = "SELECT menu_ids FROM perf_acesso WHERE `id` = '$n_acesso'";
-	$menuQuery = $mysqli->query($menuSql);
-	$result = mysqli_fetch_assoc($menuQuery);
-    $menu_ids = $result['menu_ids'];
-    
-    $menu_id = explode(";", $menu_ids);
-	foreach($menu_id as $m_id) {
-    	$m_id = trim($m_id);
- 
-    	$sql = "SELECT descricao, link FROM menus WHERE `id` = '$m_id'";
-		// Printing results
-		$result = $mysqli->query( $sql );
-		while ( $dados = $result->fetch_assoc()){
-			$descricao = $dados['descricao'];
-			$link = $dados['link'];						
-			print'<a href="'.$link.'">'.$descricao.'</a><br>';
-		}
-	}
+    mysqli_set_charset($mysqli, "utf8");
+
+    $menuSql = "SELECT menu_ids FROM perf_acesso WHERE nivel = '$n_acesso'";
+    $menuQuery = $mysqli->query($menuSql);
+    $dados = $menuQuery ? $menuQuery->fetch_assoc() : null;
+
+    if (!isset($dados['menu_ids']) || empty($dados['menu_ids'])) {
+        echo "<div class='alert alert-warning'>⚠️ Nenhum menu disponível para este nível de acesso.</div>";
+        return;
+    }
+
+    $menu_ids = explode(',', $dados['menu_ids']);
+
+    foreach ($menu_ids as $m_id) {
+        $m_id = trim($m_id);
+
+        $sql = "SELECT descricao, link FROM menus WHERE id = '$m_id'";
+        $result = $mysqli->query($sql);
+
+        if ($result) {
+            while ($menu = $result->fetch_assoc()) {
+                $descricao = $menu['descricao'];
+                $link = $menu['link'];
+                echo "<a href=\"$link\">$descricao</a><br>";
+            }
+        }
+    }
 }
 
 function carregarSetores($mysqli){
@@ -505,27 +518,18 @@ function funcaoSugRamal($mysqli){
 }
 // Aqui você exibe os ramais pendentes
     function funcaoPainelModeracao() {
-    $mysqli = new mysqli('127.0.0.1', 'dev', 'devloop356', 'intra_gamp');
-    mysqli_set_charset($mysqli, "utf8");
+    echo "<h2 class='text-center'>📝 Ramais pendentes para moderação</h2>";
 
-    $sql = "SELECT r.id, r.ramal, r.descricao, s.setor AS nome_setor 
-            FROM ramais_sugeridos r 
-            LEFT JOIN setores s ON r.setor_id = s.id
-            WHERE r.status = 'pendente'
-            ORDER BY r.id DESC";
+    $data = file_get_contents("http://127.0.0.1:9008/api/sugestao");
+    $sugestoes = json_decode($data, true);
 
-    $result = $mysqli->query($sql);
-
-    if ($result->num_rows === 0) {
-        echo "<p style='margin:20px;'>✅ Nenhum ramal aguardando moderação.</p>";
+    if (!$sugestoes || empty($sugestoes)) {
+        echo "<p class='text-center'>📭 Nenhum ramal pendente no momento.</p>";
         return;
     }
 
-    echo "<div class='container mt-4'>";
-    echo "<h2 class='text-center text-primary mb-4'>📋 Ramais Pendentes de Moderação</h2>";
-    echo "<div class='table-responsive'>";
-    echo "<table class='table table-bordered table-hover'>";
-    echo "<thead class='thead-light'>
+    echo "<table class='table table-striped'>
+        <thead>
             <tr>
                 <th>ID</th>
                 <th>Ramal</th>
@@ -533,28 +537,31 @@ function funcaoSugRamal($mysqli){
                 <th>Setor</th>
                 <th>Ações</th>
             </tr>
-          </thead><tbody>";
+        </thead>
+        <tbody>";
 
-    while ($row = $result->fetch_assoc()) {
+    foreach ($sugestoes as $ramal) {
         echo "<tr>
-                <td>{$row['id']}</td>
-                <td>{$row['ramal']}</td>
-                <td>{$row['descricao']}</td>
-                <td>{$row['nome_setor']}</td>
-                <td>
-                    <a href='?tela=moderar_ramal&id={$row['id']}&acao=aprovar' style='color:green; font-weight:bold;'>✅ Aprovar</a>
-                    &nbsp;|&nbsp;
-                    <a href='?tela=moderar_ramal&id={$row['id']}&acao=rejeitar' style='color:red;'>❌ Rejeitar</a>
-                </td>
-              </tr>";
+            <td>{$ramal['id']}</td>
+            <td>{$ramal['ramal']}</td>
+            <td>{$ramal['descricao']}</td>
+            <td>{$ramal['setor_id']}</td>
+            <td>
+                <form method='POST' style='display:inline'>
+                    <input type='hidden' name='id' value='{$ramal['id']}'>
+                    <button type='submit' name='aprovado' class='btn btn-success btn-sm'>✅ Aprovar</button>
+                </form>
+                <form method='POST' style='display:inline'>
+                    <input type='hidden' name='id' value='{$ramal['id']}'>
+                    <button type='submit' name='rejeitado' class='btn btn-danger btn-sm'>❌ Rejeitar</button>
+                </form>
+            </td>
+        </tr>";
     }
 
     echo "</tbody></table>";
-    echo "</div>"; // table-responsive
-    echo "</div>"; // container
-
-    $mysqli->close();
 }
+
 function funcaoMigrarRamais() {
     session_start(); // garante sessão ativa
 
