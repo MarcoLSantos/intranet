@@ -1,12 +1,12 @@
 <?php
 function conectarBanco() {
     try {
-        $pdo = new PDO("mysql:host=127.0.0.1;dbname=intra_gamp", "dev", "devloop356");
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $pdo->exec("SET NAMES utf8");
-        return $pdo;
+        return new PDO("mysql:host=127.0.0.1;dbname=intra_gamp;charset=utf8mb4", 'dev', 'devloop356', 'intra_gamp', [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+        ]);
     } catch (PDOException $e) {
-        die("Erro na conexão: " . $e->getMessage());
+        die("Erro ao conectar ao banco: " . $e->getMessage());
     }
 }
 function funcaoAdicionaRamal($ramal, $descricao, $setor) {
