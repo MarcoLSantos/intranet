@@ -1,17 +1,18 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
+
 use Slim\Factory\AppFactory;
 
 $app = AppFactory::create();
+$app->setBasePath('/api/index.php');
+$app->addRoutingMiddleware();
+$app->addErrorMiddleware(true, true, true);
 
-// Exemplo de rota simples
-$app->get('/teste', function ($request, $response) {
-    $response->getBody()->write("🚀 API Slim funcionando!");
-    return $response;
-});
-
-// Incluir rotas externas
-require __DIR__ . '/routes/ramal.php';
+// Inclui as rotas passando $app
+(require __DIR__ . '/routes/ramal.php')($app);
+(require __DIR__ . '/routes/sugestao.php')($app);
+(require __DIR__ . '/routes/moderacao.php')($app);
 
 $app->run();
+
