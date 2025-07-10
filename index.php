@@ -146,12 +146,17 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
 
 
 					<?php 
-
+						
+						// Exibe botão de moderação somente se o usuário estiver logado e tiver acesso acima de 1
+    					if (isset($_SESSION['UsuarioID']) && $_SESSION['UsuarioAcesso'] > 1) {
+       						 echo '<a href="?tela=moderar_ramal">📝 Moderação de Ramais</a>';
+    					}
 						// A sessão precisa ser iniciada em cada página diferente
 
 						if (!isset($_SESSION)) session_start();
 
 						// Verifica se não há a variável da sessão que identifica o usuário
+
 
 						if (!isset($_SESSION['UsuarioID'])) {
 
@@ -405,6 +410,10 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
 				break;
 
 			  case "sug_ramal":
+    			include_once 'intra/modulos/sug_ramal.php';
+    		   break;
+
+			  /*case "sug_ramal":
 
 				print '<div id="titulo" class="cor-padrao">Sugerir Ramal</div>';
 
@@ -412,7 +421,7 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
 
 				funcaoSugRamal($mysqli);
 
-				break;
+				break;*/
 
 				/*case "moderar_ramal":
 
