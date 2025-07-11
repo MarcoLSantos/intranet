@@ -409,11 +409,11 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
 
 				break;
 
-			  case "sug_ramal":
-    			include_once 'intra/modulos/sug_ramal.php';
-    		   break;
-
 			  /*case "sug_ramal":
+    			include_once 'intra/modulos/sug_ramal.php';
+    		   break;*/
+
+			  case "sug_ramal":
 
 				print '<div id="titulo" class="cor-padrao">Sugerir Ramal</div>';
 
@@ -421,7 +421,7 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
 
 				funcaoSugRamal($mysqli);
 
-				break;*/
+				break;
 
 				/*case "moderar_ramal":
 
@@ -457,55 +457,60 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
 
 	
 
-	case "moderar_ramal":
+case "moderar_ramal":
 
     if (!usuarioTemPermissao(2)) {
-
         echo "<div class='alert alert-danger text-center'>🚫 Acesso restrito: moderador ou superior necessário.</div>";
-
         break;
-
     }
 
-	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $id     = intval($_POST['id'] ?? 0);
+        $status = '';
 
-    $id     = intval($_POST['id'] ?? 0);
-
-    $status = '';
-
-
-
-    if (isset($_POST['aprovado'])) {
-
-        $status = 'aprovado';
-
-    } elseif (isset($_POST['rejeitado'])) {
-
-        $status = 'rejeitado';
-
-    }
-
-
-
-    if ($id && $status) {
-
-        if (atualizarStatusRamal($id, $status)) {
-
-            echo "<div class='alert alert-success text-center'>✅ Ramal atualizado com sucesso.</div>";
-
-        } else {
-
-            echo "<div class='alert alert-danger text-center'>❌ Falha ao atualizar o ramal.</div>";
-
+        if (isset($_POST['aprovado'])) {
+            $status = 'aprovado';
+        } elseif (isset($_POST['rejeitado'])) {
+            $status = 'rejeitado';
         }
 
+        if ($id && $status === 'aprovado') {
+            $url = "http://127.0.0.1:9001/sugestao/{$id}/aprovar";
+            $options = [
+                'http' => [
+                    'method' => 'PATCH',
+                    'header' => "Content-Type: application/json",
+                    'content' => json_encode([])
+                ]
+            ];
+            $context = stream_context_create($options);
+            $result = @file_get_contents($url, false, $context);
+
+            echo $result !== false
+                ? "<div class='alert alert-success text-center'>✅ Ramal aprovado via API.</div>"
+                : "<div class='alert alert-danger text-center'>❌ Falha ao aprovar via API.</div>";
+        }
+
+        if ($id && $status === 'rejeitado') {
+            $url = "http://127.0.0.1:9001/sugestao/{$id}";
+            $options = [
+                'http' => [
+                    'method' => 'DELETE',
+                    'header' => "Content-Type: application/json"
+                ]
+            ];
+            $context = stream_context_create($options);
+            $result = @file_get_contents($url, false, $context);
+
+            echo $result !== false
+                ? "<div class='alert alert-success text-center'>✅ Ramal rejeitado via API.</div>"
+                : "<div class='alert alert-danger text-center'>❌ Falha ao rejeitar via API.</div>";
+        }
     }
 
-}
-
     funcaoPainelModeracao();
-
     break;
+
 
 	// Função para listar os ramais pendentes com botões de ação
 
