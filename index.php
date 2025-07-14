@@ -10,7 +10,7 @@ error_reporting(E_ALL);
 
 
 // ✅ Define as constantes ANTES de incluir os módulos
-define('SERVER_API', "http://" . $_SERVER['SERVER_NAME'] . ":3001");
+define('SERVER_API', "http://" . $_SERVER['SERVER_NAME'] . ":9001");
 define('SERVER_NEW_INTRA', "http://" . $_SERVER['SERVER_NAME'] . "8080");
 define('SERVER_OLD_INTRA', "http://" . $_SERVER['SERVER_NAME']);
 
@@ -143,7 +143,7 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
 
 					<a href="?tela=comissoes">Comissões</a>
 
-
+					
 
 					<?php 
 						
@@ -152,6 +152,7 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
        						 echo '<a href="?tela=moderar_ramal">📝 Moderação de Ramais</a>';
     					}
 						// A sessão precisa ser iniciada em cada página diferente
+
 
 						if (!isset($_SESSION)) session_start();
 
@@ -532,9 +533,15 @@ case "moderar_ramal":
 
     break;
 
+	case "admin_ramais":
+    print '<div id="titulo" class="cor-padrao">Administração de Ramais</div>';
+    funcaoAdminRamais($mysqli);
+    break;
 
-
-
+	case "excluir_ramal":
+    require_once 'excluir_ramal.php';
+    break;
+	
 
 			  case "restrita":
 
