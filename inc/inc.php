@@ -2,6 +2,7 @@
 //A gente pode levar o burro até a fonte, mas não pode obrigar ele a beber água
 //COMENTADO PARA FUNÇÃO RAMAIS FUNCIONAR
 //include ('../config/config.php');
+require_once __DIR__ . '/../../config.php';
 include('pops.php');
 ?>
 
@@ -314,16 +315,17 @@ function funcaoAtalhos($mysqli){
 	
 	print '<table>';
 	// SQL query
-	$sql = 'SELECT * FROM links ORDER BY descricao';
+	$sql = 'SELECT * FROM links ORDER BY titulo';
 	// Printing results
 	$result = $mysqli->query( $sql );
 	
 	while ( $dados = $result->fetch_assoc() ) {
 
         $id = $dados['id'];
-		$descricao = $dados['descricao'];
-		$endereco = $dados['endereco'];						
-		$icone = $dados['icone'];
+        $descricao = $dados['titulo'];          // Substitui 'descricao'
+        $endereco = $dados['url'];              // Substitui 'endereco'
+        $icone = 'link.png';                    // Ícone genérico (pode mudar conforme categoria)
+        $categoria = $dados['categoria'];
 		$protegido = $dados['protected'];
 		
 		print '<div class="atalho '.$icone.'">';
@@ -391,87 +393,77 @@ function funcaoConvenios($mysqli){
 	print '</div>';
 }
 //Apresenta a opção "Ramais", onde há um formulário para pesquisa de ramais no BD
-function funcaoRamais($mysqli){
-	print '<div class="ramais">';
-	print'<form method="POST" action="?tela=ramais" >';
-	print '<input type="text" name="pesquisa" size=50px><input type="submit" name="submit" value="Pesquisar" />';
-	print'<a href="?tela=sug_ramal">Sugerir um Ramal</a>';
-	// if (isset($_SESSION['UsuarioID'])){
-	// 	print'<a href="?tela=confEdt">Alterar Meu Ramal</a>';
-	// }
-	print '<br><br></form></div>';
+function funcaoRamais($mysqli) {
+    require_once __DIR__ . '/../../config.php'; // Garante a constante SERVER_API
 
-	$curl = curl_init();
-	$pesquisa = $_POST['pesquisa'] ?? '';
+    echo '<div class="ramais">';
+    echo '<form method="POST" action="?tela=ramais" class="mb-3">';
+    echo '<input type="text" name="pesquisa" size="50" placeholder="🔍 Pesquisar ramal, setor ou descrição..." class="form-control d-inline-block w-75">';
+    echo '<button type="submit" name="submit" class="btn btn-primary ml-2">Pesquisar</button>';
+    echo '<a href="?tela=sug_ramal" class="btn btn-outline-secondary ml-2">Sugerir um Ramal</a>';
+    echo '</form>';
 
-	/*$pesquisa = $_POST['pesquisa']; ALETRADO PELO MARCO*/
-	print '<div class="ramais-tb">';
-	
-	print '<div>';
-	print '<table border="0px" cellspacing="20">';
-	print' 
-		<div>
-			<tr>
-				<th style="text-align: center;">
-					<b>Ramal</b>
-				</th> 
-				<th style="text-align: center;">
-					<b>Setor</b>
-				</th> 
-				<th style="text-align: center;">
-					<b>Descrição</b>
-				</th> 
-				<th style="text-align: center;">
-					<b>Andar</b>
-				</th>
-			</tr>
-		</div>';
-	
-	$baseUrl = SERVER_API;
-	if($pesquisa!=''){
+    $pesquisa = $_POST['pesquisa'] ?? '';
+    //$curl = curl_init();
 
-		curl_setopt_array($curl, [
-			CURLOPT_RETURNTRANSFER => 1,
-			CURLOPT_URL => "$baseUrl/ramal/filter/$pesquisa",
-			CURLOPT_USERAGENT => 'Codular Sample cURL Request'
-		]);
-		
-		
-	} else {
-		curl_setopt_array($curl, [
-			CURLOPT_RETURNTRANSFER => 1,
-			CURLOPT_URL => "$baseUrl/ramal/",
-			CURLOPT_USERAGENT => 'Codular Sample cURL Request'
-		]);
-	}
-	$resp = curl_exec($curl);
-	curl_close($curl);
-	
-	$ramals = json_decode($resp, true);
+    $url = $pesquisa !== ''
+        ? SERVER_API . "/ramal/filter/" . urlencode($pesquisa)
+        : SERVER_API . "/ramal";
 
-	if(!$ramals){
-		print"<td>Nenhum Ramal encontrado</td>";
-	}
-	foreach ((array) $ramals as $ramal) {
-		$number = $ramal['number'];
-		$core = $ramal['core'];
-		$floor = $ramal['floor'];
-		$groupName = $ramal['group']['name'];
-		
-		print"<div>
-			<tr>
-				<td>$number</td>
-				<td>$groupName</td>
-				<td>$core</td>
-				<td>$floor</td>
-			</tr>
-		</div>";
-	}
+   // curl_setopt_array($curl, [
+      //  CURLOPT_RETURNTRANSFER => true,
+      //  CURLOPT_URL => $url,
+      //  CURLOPT_USERAGENT => 'Painel Intranet Ramais',
+    //]);
 
-	print '</table>';
-	print '</div>';
-	print '</div>';
+    //$resp = curl_exec($curl);
+    //curl_close($curl);
+	echo "<small>🔗 URL chamada: $url</small><br>";
+
+	$resp = @file_get_contents($url);
+
+if ($resp === false) {
+    echo "<div class='alert alert-danger'>❌ Erro ao acessar a API de ramais.</div>";
 }
+
+
+    $ramals = json_decode($resp, true);
+
+    echo '<div class="ramais-tb">';
+    echo '<table class="table table-bordered table-hover">';
+    echo '<thead class="thead-dark">
+            <tr>
+                <th>Ramal 📞</th>
+                <th>Setor 🏢</th>
+                <th>Descrição 💡</th>
+                <th>Andar 🏬</th>
+            </tr>
+          </thead>
+          <tbody>';
+
+   if (!$ramals || !is_array($ramals) || count($ramals) === 0) {
+    echo '<tr><td colspan="4" style="text-align:center">📭 Nenhum Ramal encontrado.</td></tr>';
+} else {
+    foreach ($ramals as $ramal) {
+        $number = htmlspecialchars($ramal['number'] ?? '—');
+        $core = htmlspecialchars($ramal['core'] ?? '—');
+        $floor = htmlspecialchars($ramal['floor'] ?? '—');
+        $groupName = htmlspecialchars($ramal['group']['name'] ?? '—');
+
+            echo "<tr>
+                <td>$number</td>
+                <td>$groupName</td>
+                <td>$core</td>
+                <td>$floor</td>
+              </tr>";
+        }
+    }
+
+    echo '</tbody></table>';
+    echo '</div>';
+    echo '</div>';
+}
+
 //Apresenta a opção "Sugerir Ramal", com um formulário para adição dos dados do ramal
 function funcaoSugRamal($mysqli){
 	print '<div class="sugramal">';
@@ -505,23 +497,36 @@ function funcaoSugRamal($mysqli){
 									$id = $dados['id'];
 									$setor = $dados['setor'];
 									
-						print '<option value="'.$id.'">'.$setor.'</option>';
-					}
-					print '</select></td><br>
-			</tr>
-		</table>
-		<input type="submit" name="submit" value="Adicionar Ramal" />
-	</form>';
-	print '<br><br><br><br><br><br><br><br><br><br><br>';
-	print '<p><font size="2px"> *Todos os ramais sugeridos estão sujeitos a aprovação e só aparecerão na Intranet após serem aprovados.</p>';
-	print '</div>';
+						echo '<option value="' . $id . '">' . $setor . '</option>';
+   					 }
+    					echo '</select>
+             		   </td>
+        		    </tr>
+       			 </table>
+     		   <button type="submit">📥 Adicionar Ramal</button>
+  			  </form>';
+
+   			 echo '<p style="font-size:12px; margin-top:20px; text-align:center;">
+      				  *Todos os ramais sugeridos estão sujeitos a aprovação e só aparecerão na Intranet após serem aprovados.
+    				</p>';
+   		 echo '</div>';
 }
 // Aqui você exibe os ramais pendentes
     function funcaoPainelModeracao() {
     echo "<h2 class='text-center'>📝 Ramais pendentes para moderação</h2>";
 
-    $data = file_get_contents("http://127.0.0.1:9008/api/sugestao");
+    $data = @file_get_contents("http://127.0.0.1:9001/sugestao");
+
+		if ($data === false) {
+    		echo "<div class='alert alert-danger text-center'>❌ Erro ao acessar a API de sugestões. Verifique se ela está rodando.</div>";
+    return;
+		}
     $sugestoes = json_decode($data, true);
+
+		if (json_last_error() !== JSON_ERROR_NONE || !is_array($sugestoes)) {
+    		echo "<div class='alert alert-warning text-center'>⚠️ Resposta inválida da API. Verifique o formato do JSON.</div>";
+    		return;
+		}
 
     if (!$sugestoes || empty($sugestoes)) {
         echo "<p class='text-center'>📭 Nenhum ramal pendente no momento.</p>";
@@ -618,7 +623,80 @@ function funcaoMigrarRamais() {
     echo "</table>";
     $mysqli->close();
 }
-	
+function funcaoAdminRamais($mysqli) {
+    require_once __DIR__ . '/../../config.php'; // Garante SERVER_API
+
+    // Proteção de acesso (nível 9 ou superior)
+    if (!isset($_SESSION['UsuarioAcesso']) || $_SESSION['UsuarioAcesso'] < 3) {
+        echo "<div class='alert alert-danger'>❌ Acesso negado. Permissão insuficiente.</div>";
+        return;
+    }
+
+    echo '<h2>Painel de Administração de Ramais 🔐</h2>';
+
+    // Formulário de busca
+    echo '<form method="POST" class="mb-3">';
+    echo '<input type="text" name="pesquisa" size="50" placeholder="🔍 Buscar por número, setor ou descrição..." />';
+    echo '<button type="submit" class="btn btn-primary ml-2">Buscar</button>';
+    echo '</form><hr>';
+
+    // Captura da pesquisa
+    $pesquisa = $_POST['pesquisa'] ?? '';
+    $url = $pesquisa !== ''
+        ? SERVER_API . "/ramal/filter/" . urlencode($pesquisa)
+        : SERVER_API . "/ramal";
+
+    // Consulta à API
+    $resp = @file_get_contents($url);
+
+    if ($resp === false) {
+        echo "<div class='alert alert-warning'>❌ Não foi possível conectar à API de ramais.</div>";
+        return;
+    }
+
+    $ramals = json_decode($resp, true);
+
+    // Tabela de ramais
+    echo '<table class="table table-bordered table-hover">';
+    echo '<thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Número</th>
+            <th>Setor</th>
+            <th>Descrição</th>
+            <th>Andar</th>
+            <th>Ações</th>
+        </tr>
+    </thead><tbody>';
+
+    if (!is_array($ramals) || count($ramals) === 0) {
+        echo '<tr><td colspan="6" class="text-center">📭 Nenhum ramal encontrado.</td></tr>';
+    } else {
+        foreach ($ramals as $index => $ramal) {
+            // Ajuste caso o campo 'id' não venha no JSON
+            $id = $ramal['id'] ?? ($index + 1);
+            $number = htmlspecialchars($ramal['number'] ?? '—');
+            $core = htmlspecialchars($ramal['core'] ?? '—');
+            $floor = htmlspecialchars($ramal['floor'] ?? '—');
+            $groupName = htmlspecialchars($ramal['group']['name'] ?? '—');
+
+            echo "<tr>
+                <td>$id</td>
+                <td>$number</td>
+                <td>$groupName</td>
+                <td>$core</td>
+                <td>$floor</td>
+                <td>
+                    <a href='?tela=editar_ramal&id=$id' class='btn btn-sm btn-warning'>✏️ Editar</a> 
+                    <a href='?tela=excluir_ramal&id=$id' class='btn btn-sm btn-danger' onclick=\"return confirm('Tem certeza que deseja excluir o ramal $number?')\">🗑️ Excluir</a>
+                </td>
+            </tr>";
+        }
+    }
+
+    echo '</tbody></table>';
+}
+
 function funcaoLogin(){
 	print '<div class="login">';
 		print '<p>Faça login com usuário (nome.sobrenome) e senha de rede</p>';
