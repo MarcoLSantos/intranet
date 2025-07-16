@@ -655,6 +655,10 @@ function funcaoAdminRamais($mysqli) {
     }
 
     $ramals = json_decode($resp, true);
+	
+	if ($_SESSION['UsuarioAcesso'] >= 3) {
+    echo '<a href="?tela=novo_ramal" class="btn btn-success mb-3">➕ Adicionar Novo Ramal</a>';
+}
 
     // Tabela de ramais
     echo '<table class="table table-bordered table-hover">';
