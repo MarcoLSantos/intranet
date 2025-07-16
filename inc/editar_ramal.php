@@ -1,8 +1,8 @@
 <?php
-require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/../config/config.php';
 
 if (!isset($_SESSION)) session_start();
-if (!isset($_SESSION['UsuarioAcesso']) || $_SESSION['UsuarioAcesso'] < 9) {
+if (!isset($_SESSION['UsuarioAcesso']) || $_SESSION['UsuarioAcesso'] < 3) {
     echo "<div class='alert alert-danger'>❌ Acesso negado.</div>";
     return;
 }
@@ -30,13 +30,30 @@ if (!$ramal) {
     return;
 }
 
+// 🔍 Buscar todos os setores
+$setoresResp = @file_get_contents(SERVER_API . "/setores");
+$setores = json_decode($setoresResp, true);
+
 // ✏️ Formulário de edição
 echo "<h2>Editar Ramal #$id</h2>";
 echo '<form method="POST">';
-echo '<label>Número:</label><input type="text" name="number" value="'.htmlspecialchars($ramal['number']).'" /><br>';
-echo '<label>Descrição:</label><input type="text" name="core" value="'.htmlspecialchars($ramal['core']).'" /><br>';
-echo '<label>Andar:</label><input type="text" name="floor" value="'.htmlspecialchars($ramal['floor']).'" /><br>';
-echo '<label>Setor:</label><input type="text" name="group" value="'.htmlspecialchars($ramal['group']['name']).'" /><br>';
+echo '<label>Número:</label><input type="text" name="number" value="'.htmlspecialchars($ramal['number'] ?? '').'" /><br>';
+echo '<label>Descrição:</label><input type="text" name="core" value="'.htmlspecialchars($ramal['core'] ?? '').'" /><br>';
+echo '<label>Andar:</label><input type="text" name="floor" value="'.htmlspecialchars($ramal['floor'] ?? '').'" /><br>';
+
+// 🔽 Dropdown de setores com verificação
+echo '<label>Setor:</label><select name="group">';
+if (is_array($setores)) {
+    foreach ($setores as $s) {
+        $nome = $s['setor'] ?? '';
+        $selected = ($nome === ($ramal['group']['name'] ?? '')) ? 'selected' : '';
+        echo "<option value=\"$nome\" $selected>$nome</option>";
+    }
+} else {
+    echo '<option value="">⚠️ Erro ao carregar setores</option>';
+}
+echo '</select><br>';
+
 echo '<button type="submit">💾 Salvar</button>';
 echo '</form><br><a href="?tela=admin_ramais">🔙 Voltar</a>';
 
