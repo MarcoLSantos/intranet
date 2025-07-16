@@ -108,15 +108,41 @@ a:active {
 	height: 60px;
 }
 
-#menu {
-	/* padding: 20px 0px; */
+/*#menu {
+	 padding: 20px 0px; 
 	float: right;
 	font-size: 18px;
-}
+} ALTERADO PELO MARCO*/
 
-#menu a {
+#menu {
+  position: fixed;
+  top: 60px; /* Ajuste conforme altura do logo */
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 10px 0;
+  /*background-color: #3399cc;  Mantém fundo azul original */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/*#menu a {
 	padding: 5px 10px;
 	text-decoration: none;
+}ALTERADO PELO MARCO*/
+
+/* 🔗 Estilo dos links do menu */
+#menu a {
+  display: inline-block;
+  text-decoration: none;
+  /*color: #fff;*/
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 #menu a:link {
@@ -127,11 +153,16 @@ a:active {
 	color: none;
 }
 
-#menu a:hover {
+
+/*#menu a:hover {
 	color: #09668B;
 	background: #75D7D1;
-}
+}ALTERADO PELO MARCO*/
 
+/* 💡 Efeito ao passar o mouse */
+#menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 #menu a:active {
 	color: #068980;
 }
@@ -168,6 +199,41 @@ a:active {
 #menu-login a:active {
 	color: none;
 }
+
+#atalhos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.atalho {
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.atalho img {
+  display: block;
+  margin: 0 auto;              /* Centraliza horizontalmente */
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.atalho .desc {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #09668B;
+  font-weight: bold;
+}
+
 
 #menu-login img {
 	height: 20px;
