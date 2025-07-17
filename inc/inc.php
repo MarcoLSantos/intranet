@@ -326,7 +326,7 @@ function funcaoAtalhos($mysqli){
         $endereco = $dados['url'];              // Substitui 'endereco'
         $icone = 'link.png';                    // Ícone genérico (pode mudar conforme categoria)
         $categoria = $dados['categoria'];
-		$protegido = $dados['protected'];
+		//$protegido = $dados['protected'];
 		
 		print '<div class="atalho '.$icone.'">';
 
@@ -626,7 +626,7 @@ function funcaoMigrarRamais() {
 function funcaoAdminRamais($mysqli) {
     require_once __DIR__ . '/../../config.php'; // Garante SERVER_API
 
-    // Proteção de acesso (nível 9 ou superior)
+    // 🔐 Proteção de acesso
     if (!isset($_SESSION['UsuarioAcesso']) || $_SESSION['UsuarioAcesso'] < 3) {
         echo "<div class='alert alert-danger'>❌ Acesso negado. Permissão insuficiente.</div>";
         return;
@@ -634,19 +634,91 @@ function funcaoAdminRamais($mysqli) {
 
     echo '<h2>Painel de Administração de Ramais 🔐</h2>';
 
-    // Formulário de busca
+    // 👉 Botão para abrir o formulário
+    echo '<form method="POST" style="margin-bottom: 20px;">';
+    echo '<input type="hidden" name="abrir_formulario" value="1">';
+    echo '<button type="submit" class="btn btn-success">➕ Adicionar Novo Ramal</button>';
+    echo '</form>';
+
+    // 💾 Processar envio do novo ramal
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['salvar_ramal'])) {
+        $dados = [
+            'number' => $_POST['number'],
+            'core'   => $_POST['core'],
+            'floor'  => $_POST['floor'],
+            'group'  => ['name' => $_POST['group']]
+        ];
+
+        $ch = curl_init();
+        curl_setopt_array($ch, [
+            CURLOPT_URL            => SERVER_API . "/ramal",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_POST           => true,
+            CURLOPT_POSTFIELDS     => json_encode($dados),
+            CURLOPT_HTTPHEADER     => ['Content-Type: application/json']
+        ]);
+
+        $resposta = curl_exec($ch);
+        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        curl_close($ch);
+
+        if ($httpCode === 201 || $httpCode === 200) {
+            echo "<div class='alert alert-success'>✅ Ramal adicionado com sucesso!</div>";
+        } else {
+            echo "<div class='alert alert-danger'>❌ Erro ao adicionar ramal. Código HTTP: $httpCode</div>";
+        }
+    }
+
+    // 📋 Exibir formulário se solicitado
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['abrir_formulario'])) {
+        $setoresResp = @file_get_contents(SERVER_API . "/setores");
+        $setores = json_decode($setoresResp, true);
+
+        echo '<div class="card p-3 mb-4" style="max-width: 550px;">';
+        echo '<h4>📞 Cadastrar Novo Ramal</h4>';
+        echo '<form method="POST">';
+
+        echo '<input type="hidden" name="salvar_ramal" value="1">';
+
+        echo '<label>Número:</label>';
+        echo '<input type="text" name="number" class="form-control mb-2" required>';
+
+        echo '<label>Descrição:</label>';
+        echo '<input type="text" name="core" class="form-control mb-2" required>';
+
+        echo '<label>Andar:</label>';
+        echo '<input type="text" name="floor" class="form-control mb-2">';
+
+        echo '<label>Setor:</label>';
+        echo '<select name="group" class="form-control mb-3">';
+        if (is_array($setores)) {
+            foreach ($setores as $s) {
+                $nome = $s['setor'] ?? '';
+                echo "<option value=\"$nome\">$nome</option>";
+            }
+        } else {
+            echo '<option value="">⚠️ Erro ao carregar setores</option>';
+        }
+        echo '</select>';
+
+        echo '<button type="submit" class="btn btn-primary">💾 Salvar</button>';
+        echo '</form>';
+        echo '</div><hr>';
+    }
+
+    // 🔍 Formulário de busca
     echo '<form method="POST" class="mb-3">';
     echo '<input type="text" name="pesquisa" size="50" placeholder="🔍 Buscar por número, setor ou descrição..." />';
     echo '<button type="submit" class="btn btn-primary ml-2">Buscar</button>';
     echo '</form><hr>';
 
-    // Captura da pesquisa
+    // 🔄 Captura da pesquisa
     $pesquisa = $_POST['pesquisa'] ?? '';
     $url = $pesquisa !== ''
         ? SERVER_API . "/ramal/filter/" . urlencode($pesquisa)
         : SERVER_API . "/ramal";
 
-    // Consulta à API
+    // 🧠 Consulta à API
     $resp = @file_get_contents($url);
 
     if ($resp === false) {
@@ -655,12 +727,8 @@ function funcaoAdminRamais($mysqli) {
     }
 
     $ramals = json_decode($resp, true);
-	
-	if ($_SESSION['UsuarioAcesso'] >= 3) {
-    echo '<a href="?tela=novo_ramal" class="btn btn-success mb-3">➕ Adicionar Novo Ramal</a>';
-}
 
-    // Tabela de ramais
+    // 🗂️ Tabela de ramais
     echo '<table class="table table-bordered table-hover">';
     echo '<thead class="thead-dark">
         <tr>
@@ -677,11 +745,10 @@ function funcaoAdminRamais($mysqli) {
         echo '<tr><td colspan="6" class="text-center">📭 Nenhum ramal encontrado.</td></tr>';
     } else {
         foreach ($ramals as $index => $ramal) {
-            // Ajuste caso o campo 'id' não venha no JSON
-            $id = $ramal['id'] ?? ($index + 1);
-            $number = htmlspecialchars($ramal['number'] ?? '—');
-            $core = htmlspecialchars($ramal['core'] ?? '—');
-            $floor = htmlspecialchars($ramal['floor'] ?? '—');
+            $id        = $ramal['id'] ?? ($index + 1);
+            $number    = htmlspecialchars($ramal['number'] ?? '—');
+            $core      = htmlspecialchars($ramal['core'] ?? '—');
+            $floor     = htmlspecialchars($ramal['floor'] ?? '—');
             $groupName = htmlspecialchars($ramal['group']['name'] ?? '—');
 
             echo "<tr>
@@ -700,6 +767,8 @@ function funcaoAdminRamais($mysqli) {
 
     echo '</tbody></table>';
 }
+
+
 
 function funcaoLogin(){
 	print '<div class="login">';

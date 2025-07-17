@@ -1,6 +1,8 @@
 <?php
 require_once __DIR__ . '/../config/config.php';
 if (!isset($_SESSION)) session_start();
+
+// 🔐 Verifica permissão
 if ($_SESSION['UsuarioAcesso'] < 3) {
   echo "<div class='alert alert-danger'>❌ Acesso negado.</div>";
   return;
@@ -11,12 +13,20 @@ $setoresResp = @file_get_contents(SERVER_API . "/setores");
 $setores = json_decode($setoresResp, true);
 
 // ✏️ Formulário
-echo "<h2>Adicionar Novo Ramal</h2>";
-echo '<form method="POST">';
-echo '<label>Número:</label><input type="text" name="number" required><br>';
-echo '<label>Descrição:</label><input type="text" name="core" required><br>';
-echo '<label>Andar:</label><input type="text" name="floor"><br>';
-echo '<label>Setor:</label><select name="group">';
+echo "<h2>➕ Adicionar Novo Ramal</h2>";
+echo '<form method="POST" class="form-group" style="max-width: 500px;">';
+
+echo '<label>Número:</label>';
+echo '<input type="text" name="number" class="form-control mb-2" required>';
+
+echo '<label>Descrição:</label>';
+echo '<input type="text" name="core" class="form-control mb-2" required>';
+
+echo '<label>Andar:</label>';
+echo '<input type="text" name="floor" class="form-control mb-2">';
+
+echo '<label>Setor:</label>';
+echo '<select name="group" class="form-control mb-3">';
 if (is_array($setores)) {
   foreach ($setores as $s) {
     $nome = $s['setor'] ?? '';
@@ -25,9 +35,11 @@ if (is_array($setores)) {
 } else {
   echo '<option value="">⚠️ Erro ao carregar setores</option>';
 }
-echo '</select><br>';
-echo '<button type="submit">💾 Salvar</button>';
-echo '</form><br><a href="?tela=admin_ramais">🔙 Voltar</a>';
+echo '</select>';
+
+echo '<button type="submit" class="btn btn-success">💾 Salvar</button>';
+echo '</form>';
+echo '<br><a href="?tela=admin_ramais" class="btn btn-secondary">🔙 Voltar</a>';
 
 // 🧠 Enviar POST
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -52,9 +64,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   curl_close($ch);
 
   if ($httpCode == 201 || $httpCode == 200) {
-    echo "<div class='alert alert-success'>✅ Ramal adicionado com sucesso!</div>";
+    echo "<div class='alert alert-success mt-3'>✅ Ramal adicionado com sucesso!</div>";
   } else {
-    echo "<div class='alert alert-danger'>❌ Erro ao adicionar ramal. Código HTTP: $httpCode</div>";
+    echo "<div class='alert alert-danger mt-3'>❌ Erro ao adicionar ramal. Código HTTP: $httpCode</div>";
   }
 }
 ?>

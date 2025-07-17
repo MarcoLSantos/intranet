@@ -4,7 +4,7 @@ require_once __DIR__ . '/../config//config.php';
 
 if (!isset($_SESSION)) session_start();
 
-if (!isset($_SESSION['UsuarioAcesso']) || $_SESSION['UsuarioAcesso'] < 9) {
+if (!isset($_SESSION['UsuarioAcesso']) || $_SESSION['UsuarioAcesso'] < 3) {
     echo "<div class='alert alert-danger'>❌ Acesso negado.</div>";
     return;
 }
