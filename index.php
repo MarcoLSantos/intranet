@@ -111,15 +111,9 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
 
 				<div id="logo">
 
-					<a href="">
+					<a href="http://portal:9008/">
 
-						<img src="intra/images/logo-canoas.png">
-
-					</a>
-
-					<a href="http://portal:9006/">
-
-						<img src="intra/images/logo2017.png">
+						<img src="intra/images/PNGHUASM.png">
 
 					</a>
 
@@ -141,16 +135,30 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
 
 					<a href="?tela=institucional">Institucional</a>
 
+					<a href="?tela=cardapio">🍽️ Cardápio</a>
+
 					<a href="?tela=comissoes">Comissões</a>
 
-					
+					<!--?php
+					// Exibe somente se o usuário estiver logado e for administrador (nível 3 ou mais)
+					if (isset($_SESSION['UsuarioAcesso']) && $_SESSION['UsuarioAcesso'] >= 3) {
+    				echo '<a href="?tela=admin_ramais"> Administração de Ramais</a>';
+					}
+						?-->
+					<!--?php
+						//ADMINISTRAÇÃO DE LINKS
+						if ($_SESSION['UsuarioAcesso'] >= 3) {
+  					echo '<a href="?tela=admin_links"> Gerenciar Links</a>';
+						}
+						?-->
+			
 
 					<?php 
 						
 						// Exibe botão de moderação somente se o usuário estiver logado e tiver acesso acima de 1
-    					if (isset($_SESSION['UsuarioID']) && $_SESSION['UsuarioAcesso'] > 1) {
-       						 echo '<a href="?tela=moderar_ramal">📝 Moderação de Ramais</a>';
-    					}
+    					//if (isset($_SESSION['UsuarioID']) && $_SESSION['UsuarioAcesso'] > 1) {
+       					//	 echo '<a href="?tela=moderar_ramal"> Moderação de Ramais</a>';
+    					//}
 						// A sessão precisa ser iniciada em cada página diferente
 
 
@@ -252,12 +260,28 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
 		</div>
 
 		<div id="area-principal">
+			
+		
+					<?php
+							// PARA Adicionar Link
+						$pdo = new PDO("mysql:host=127.0.0.1;dbname=intra_gamp", "dev", "devloop356");
+						$stmt = $pdo->query("SELECT * FROM links WHERE ativo = 1 ORDER BY titulo");
 
+							echo "<div id='atalhos'>";
+						foreach ($stmt as $d) {
+ 							echo "<div class='atalho'>";
+ 							echo "<a href=\"{$d['url']}\" target=\"_blank\">";
+ 							echo "<img src=\"intra/images/{$d['imagem']}\" alt=\"{$d['titulo']}\" />";
+ 							echo "<div class='desc'>{$d['titulo']}</div>";
+ 							echo "</a></div>";
+							}
+							echo "</div>";
+						?>
 			<?php 
 
 			//Include abaixo serve para adicionar avisos à Intranet
 
-			include('intra/inc/CelularPlantao.php');
+			//include('intra/inc/CelularPlantao.php');
 
 			?>
 
@@ -280,7 +304,7 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
 
     echo '
 
-    <div id="destaques" class="atalhos-grid">
+    <!--div id="destaques" class="atalhos-grid">
 
 
 
@@ -344,7 +368,7 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
 
 
 
-</div>
+</div-->
 
     <div id="titulo" class="cor-padrao">Bem-vindo à Intranet</div>
 
@@ -352,11 +376,11 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
 
         <h2 style="color: #006699;">Olá, seja bem-vindo! 👋</h2>
 
-        <p style="font-size: 1.2em;">Aqui você acessa os recursos da rede GAMP em Canoas.</p>
+        <p style="font-size: 1.2em;">Aqui você acessa os recursos da rede ASM em Canoas.</p>
 
 
 
-        <a href="https://www.canoas.rs.gov.br/" target="_blank" style="display: inline-block; margin: 20px 0;">
+        <a href="https://www.asaudem.org/projetos-asm/canoas/" target="_blank" style="display: inline-block; margin: 20px 0;">
 
             <img src="intra/images/bemvindo-intra.jpg" alt="Bem-vindo à Intranet" style="width: 60%; max-width: 520px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
 
@@ -364,7 +388,7 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
 
 
 
-        <p><a href="https://www.canoas.rs.gov.br/" target="_blank" style="color: #006699; font-weight: bold;">Acesse também o portal oficial de Canoas</a></p>
+        <p><a href="https://www.asaudem.org/projetos-asm/canoas" target="_blank" style="color: #006699; font-weight: bold;">Acesse também o portal oficial de Canoas</a></p>
 
     </div>
 
@@ -373,6 +397,20 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
 ';
 
     break;
+
+
+			case "admin_links":
+  				require_once 'intra/inc/admin_links.php';
+  			break;
+
+			case "editar_link":
+  				require_once 'intra/inc/editar_link.php';
+ 			 break;
+
+			case "excluir_link":
+  				require_once 'intra/inc/excluir_link.php';
+  			break;
+			
 
 			  case "convenio":
 
@@ -423,6 +461,19 @@ echo "<p>✅ módulo_usuarios.php incluído com sucesso.</p>";
 				funcaoSugRamal($mysqli);
 
 				break;
+
+
+				case "admin_cardapio":
+    			require_once 'intra/inc/admin_cardapio.php';
+    			break;
+
+
+
+				case "cardapio":
+  				require_once 'intra/inc/cardapio.php';
+  				break;
+
+
 
 				/*case "moderar_ramal":
 
@@ -532,6 +583,10 @@ case "moderar_ramal":
     </script>";
 
     break;
+	
+	case "novo_ramal":
+  	require_once 'intra/inc/novo_ramal.php';
+  	break;
 
 	case "admin_ramais":
     print '<div id="titulo" class="cor-padrao">Administração de Ramais</div>';
@@ -539,9 +594,14 @@ case "moderar_ramal":
     break;
 
 	case "excluir_ramal":
-    require_once 'excluir_ramal.php';
+    require_once __DIR__ . '/intra/inc/excluir_ramal.php';
     break;
 	
+	case "editar_ramal":
+    require_once __DIR__ . '/intra/inc/editar_ramal.php';
+    break;
+
+
 
 			  case "restrita":
 
