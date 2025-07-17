@@ -35,6 +35,78 @@ return function ($app) {
         return $response->withHeader('Content-Type', 'application/json');
     });
 
+    // ✅ ROTA POST: adicionar novo ramal
+    $app->post('/ramal', function (Request $request, Response $response) {
+        try {
+            $pdo = new PDO("mysql:host=127.0.0.1;dbname=intra_gamp", "dev", "devloop356");
+            $dados = json_decode($request->getBody(), true);
+
+            // Buscar setor_id com base no nome
+            $stmtSetor = $pdo->prepare("SELECT id FROM setores WHERE setor = ?");
+            $stmtSetor->execute([$dados['group']['name']]);
+            $setor = $stmtSetor->fetch(PDO::FETCH_ASSOC);
+
+            if (!$setor) {
+                throw new Exception("Setor não encontrado: " . $dados['group']['name']);
+            }
+
+            $stmt = $pdo->prepare("
+                INSERT INTO ramais (number, descricao, andar, setor_id)
+                VALUES (?, ?, ?, ?)
+            ");
+            $stmt->execute([
+                $dados['number'],
+                $dados['core'],
+                $dados['floor'],
+                $setor['id']
+            ]);
+
+            $response->getBody()->write(json_encode(['status' => 'criado']));
+            return $response->withStatus(201)->withHeader('Content-Type', 'application/json');
+        } catch (Exception $e) {
+            $response->getBody()->write(json_encode(['erro' => $e->getMessage()]));
+            return $response->withStatus(500)->withHeader('Content-Type', 'application/json');
+        }
+    });
+
+    // ✅ ROTA PATCH: editar ramal por ID
+    $app->patch('/ramal/{id}', function (Request $request, Response $response, array $args) {
+        try {
+            $pdo = new PDO("mysql:host=127.0.0.1;dbname=intra_gamp", "dev", "devloop356");
+            $dados = json_decode($request->getBody(), true);
+
+            $stmtSetor = $pdo->prepare("SELECT id FROM setores WHERE setor = ?");
+            $stmtSetor->execute([$dados['group']['name']]);
+            $setor = $stmtSetor->fetch(PDO::FETCH_ASSOC);
+
+            if (!$setor) {
+                throw new Exception("Setor não encontrado: " . $dados['group']['name']);
+            }
+
+            $stmt = $pdo->prepare("
+                UPDATE ramais SET 
+                    number = ?, 
+                    descricao = ?, 
+                    andar = ?, 
+                    setor_id = ?
+                WHERE id = ?
+            ");
+            $stmt->execute([
+                $dados['number'],
+                $dados['core'],
+                $dados['floor'],
+                $setor['id'],
+                $args['id']
+            ]);
+
+            $response->getBody()->write(json_encode(['status' => 'atualizado']));
+            return $response->withHeader('Content-Type', 'application/json');
+        } catch (Exception $e) {
+            $response->getBody()->write(json_encode(['erro' => $e->getMessage()]));
+            return $response->withStatus(500)->withHeader('Content-Type', 'application/json');
+        }
+    });
+
     // ✅ ROTA DELETE: excluir ramal por ID
     $app->delete('/ramal/{id}', function (Request $request, Response $response, array $args) {
         try {
@@ -50,54 +122,13 @@ return function ($app) {
         }
     });
 
-    // ✅ ROTA EDITAR RAMAL: edita ramal por ID
-        $app->patch('/ramal/{id}', function (Request $request, Response $response, array $args) {
-    try {
+    // ✅ ROTA GET: listar setores
+    $app->get('/setores', function (Request $request, Response $response) {
         $pdo = new PDO("mysql:host=127.0.0.1;dbname=intra_gamp", "dev", "devloop356");
-        $dados = json_decode($request->getBody(), true);
+        $stmt = $pdo->query("SELECT setor FROM setores ORDER BY setor ASC");
+        $setores = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        // 🔍 Buscar setor_id com base no nome do setor
-        $stmtSetor = $pdo->prepare("SELECT id FROM setores WHERE setor = ?");
-        $stmtSetor->execute([$dados['group']['name']]);
-        $setor = $stmtSetor->fetch(PDO::FETCH_ASSOC);
-
-        if (!$setor) {
-            throw new Exception("Setor não encontrado: " . $dados['group']['name']);
-        }
-
-        $stmt = $pdo->prepare("
-            UPDATE ramais SET 
-                number = ?, 
-                descricao = ?, 
-                andar = ?, 
-                setor_id = ?
-            WHERE id = ?
-        ");
-        $stmt->execute([
-            $dados['number'],
-            $dados['core'],
-            $dados['floor'],
-            $setor['id'],
-            $args['id']
-        ]);
-
-        $response->getBody()->write(json_encode(['status' => 'atualizado']));
+        $response->getBody()->write(json_encode($setores));
         return $response->withHeader('Content-Type', 'application/json');
-    } catch (Exception $e) {
-        $response->getBody()->write(json_encode(['erro' => $e->getMessage()]));
-        return $response->withStatus(500)->withHeader('Content-Type', 'application/json');
-    }
-});
-        $app->get('/setores', function (Request $request, Response $response) {
-    $pdo = new PDO("mysql:host=127.0.0.1;dbname=intra_gamp", "dev", "devloop356");
-    $stmt = $pdo->query("SELECT setor FROM setores ORDER BY setor ASC");
-    $setores = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-    $response->getBody()->write(json_encode($setores));
-    return $response->withHeader('Content-Type', 'application/json');
-});
-
-
-}; // <- esse fechamento é obrigatório
-
-
+    });
+};
