@@ -16,5 +16,14 @@ $app->addErrorMiddleware(true, true, true);
 (require __DIR__ . '/routes/sugestao.php')($app);
 (require __DIR__ . '/routes/moderacao.php')($app);
 (require __DIR__ . '/routes/cardapio.php')($app);
+(require __DIR__ . '/routes/file.php')($app);
+
+
+// ✅ Rota de teste direta
+$app->get('/teste', function ($request, $response) {
+    $response->getBody()->write("✅ Rota /teste funcionando!");
+    return $response;
+});
+
 
 $app->run();
