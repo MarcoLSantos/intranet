@@ -1,0 +1,1016 @@
+[10-Jul-2025 19:19:05 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[10-Jul-2025 19:19:14 America/Sao_Paulo] 405 Method Not Allowed
+Type: Slim\Exception\HttpMethodNotAllowedException
+Code: 405
+Message: Method not allowed. Must be one of: PATCH
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 79
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[10-Jul-2025 19:27:13 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[10-Jul-2025 19:27:44 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[10-Jul-2025 19:33:38 America/Sao_Paulo] 405 Method Not Allowed
+Type: Slim\Exception\HttpMethodNotAllowedException
+Code: 405
+Message: Method not allowed. Must be one of: PATCH
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 79
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[10-Jul-2025 19:34:04 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[14-Jul-2025 13:39:02 America/Sao_Paulo] PHP Warning:  Undefined variable $app in C:\inetpub\gampweb\api\routes\ramal.php on line 19
+[14-Jul-2025 13:39:02 America/Sao_Paulo] Slim Application Error
+Type: Error
+Code: 0
+Message: Call to a member function delete() on null
+File: C:\inetpub\gampweb\api\routes\ramal.php
+Line: 19
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(38): {closure:{closure:C:\inetpub\gampweb\api\routes\ramal.php:5}:6}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\Route.php(363): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(45): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#8 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#9 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#10 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#11 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#12 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#13 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#14 {main}
+[14-Jul-2025 13:39:07 America/Sao_Paulo] PHP Warning:  Undefined variable $app in C:\inetpub\gampweb\api\routes\ramal.php on line 19
+[14-Jul-2025 13:39:07 America/Sao_Paulo] Slim Application Error
+Type: Error
+Code: 0
+Message: Call to a member function delete() on null
+File: C:\inetpub\gampweb\api\routes\ramal.php
+Line: 19
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(38): {closure:{closure:C:\inetpub\gampweb\api\routes\ramal.php:5}:6}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\Route.php(363): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(45): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#8 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#9 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#10 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#11 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#12 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#13 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#14 {main}
+[14-Jul-2025 13:39:09 America/Sao_Paulo] PHP Warning:  Undefined variable $app in C:\inetpub\gampweb\api\routes\ramal.php on line 19
+[14-Jul-2025 13:39:09 America/Sao_Paulo] Slim Application Error
+Type: Error
+Code: 0
+Message: Call to a member function delete() on null
+File: C:\inetpub\gampweb\api\routes\ramal.php
+Line: 19
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(38): {closure:{closure:C:\inetpub\gampweb\api\routes\ramal.php:5}:6}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\Route.php(363): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(45): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#8 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#9 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#10 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#11 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#12 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#13 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#14 {main}
+[14-Jul-2025 13:39:27 America/Sao_Paulo] PHP Warning:  Undefined variable $app in C:\inetpub\gampweb\api\routes\ramal.php on line 19
+[14-Jul-2025 13:39:27 America/Sao_Paulo] Slim Application Error
+Type: Error
+Code: 0
+Message: Call to a member function delete() on null
+File: C:\inetpub\gampweb\api\routes\ramal.php
+Line: 19
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(38): {closure:{closure:C:\inetpub\gampweb\api\routes\ramal.php:5}:6}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\Route.php(363): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(45): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#8 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#9 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#10 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#11 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#12 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#13 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#14 {main}
+[14-Jul-2025 13:41:21 America/Sao_Paulo] PHP Warning:  Undefined variable $app in C:\inetpub\gampweb\api\routes\ramal.php on line 20
+[14-Jul-2025 13:41:21 America/Sao_Paulo] Slim Application Error
+Type: Error
+Code: 0
+Message: Call to a member function delete() on null
+File: C:\inetpub\gampweb\api\routes\ramal.php
+Line: 20
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(38): {closure:{closure:C:\inetpub\gampweb\api\routes\ramal.php:5}:6}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\Route.php(363): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(45): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#8 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#9 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#10 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#11 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#12 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#13 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#14 {main}
+[14-Jul-2025 13:41:22 America/Sao_Paulo] PHP Warning:  Undefined variable $app in C:\inetpub\gampweb\api\routes\ramal.php on line 20
+[14-Jul-2025 13:41:22 America/Sao_Paulo] Slim Application Error
+Type: Error
+Code: 0
+Message: Call to a member function delete() on null
+File: C:\inetpub\gampweb\api\routes\ramal.php
+Line: 20
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(38): {closure:{closure:C:\inetpub\gampweb\api\routes\ramal.php:5}:6}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\Route.php(363): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(45): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#8 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#9 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#10 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#11 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#12 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#13 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#14 {main}
+[14-Jul-2025 13:44:18 America/Sao_Paulo] PHP Warning:  Undefined variable $app in C:\inetpub\gampweb\api\routes\ramal.php on line 20
+[14-Jul-2025 13:44:18 America/Sao_Paulo] Slim Application Error
+Type: Error
+Code: 0
+Message: Call to a member function delete() on null
+File: C:\inetpub\gampweb\api\routes\ramal.php
+Line: 20
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(38): {closure:{closure:C:\inetpub\gampweb\api\routes\ramal.php:5}:6}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\Route.php(363): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(45): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#8 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#9 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#10 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#11 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#12 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#13 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#14 {main}
+[14-Jul-2025 13:44:30 America/Sao_Paulo] PHP Warning:  Undefined variable $app in C:\inetpub\gampweb\api\routes\ramal.php on line 20
+[14-Jul-2025 13:44:30 America/Sao_Paulo] Slim Application Error
+Type: Error
+Code: 0
+Message: Call to a member function delete() on null
+File: C:\inetpub\gampweb\api\routes\ramal.php
+Line: 20
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(38): {closure:{closure:C:\inetpub\gampweb\api\routes\ramal.php:5}:6}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\Route.php(363): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(45): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#8 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#9 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#10 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#11 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#12 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#13 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#14 {main}
+[14-Jul-2025 13:52:13 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[16-Jul-2025 18:24:47 America/Sao_Paulo] 405 Method Not Allowed
+Type: Slim\Exception\HttpMethodNotAllowedException
+Code: 405
+Message: Method not allowed. Must be one of: GET
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 79
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[16-Jul-2025 19:02:10 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[16-Jul-2025 19:02:18 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[16-Jul-2025 19:08:20 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[16-Jul-2025 19:22:35 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[16-Jul-2025 19:42:31 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[16-Jul-2025 19:42:36 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[16-Jul-2025 19:47:23 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[16-Jul-2025 19:48:18 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[16-Jul-2025 19:48:20 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[16-Jul-2025 19:48:58 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[16-Jul-2025 19:51:17 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[17-Jul-2025 09:42:35 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[17-Jul-2025 09:42:35 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(19): Slim\App->run()
+#8 {main}
+[17-Jul-2025 11:48:53 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(20): Slim\App->run()
+#8 {main}
+[17-Jul-2025 12:12:10 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(20): Slim\App->run()
+#8 {main}
+[17-Jul-2025 17:10:00 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(20): Slim\App->run()
+#8 {main}
+[17-Jul-2025 17:28:42 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(20): Slim\App->run()
+#8 {main}
+[17-Jul-2025 18:48:44 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(20): Slim\App->run()
+#8 {main}
+[17-Jul-2025 18:52:17 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(20): Slim\App->run()
+#8 {main}
+[18-Jul-2025 10:04:46 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(20): Slim\App->run()
+#8 {main}
+[18-Jul-2025 10:04:46 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(20): Slim\App->run()
+#8 {main}
+[18-Jul-2025 10:13:14 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 10:13:19 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 10:13:46 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 10:13:46 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 10:15:31 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:09:05 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:17:17 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:17:19 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:17:25 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:17:34 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:18:22 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:24:50 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:24:52 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:25:39 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:25:40 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:25:40 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:25:41 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:25:41 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:25:41 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:25:41 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:25:41 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(21): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:28:13 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(29): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:29:44 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(29): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:33:20 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(29): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:37:50 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(29): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:38:03 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(29): Slim\App->run()
+#8 {main}
+[18-Jul-2025 11:38:17 America/Sao_Paulo] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 C:\inetpub\gampweb\api\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#7 C:\inetpub\gampweb\api\index.php(29): Slim\App->run()
+#8 {main}
